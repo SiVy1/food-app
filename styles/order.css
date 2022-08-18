@@ -1,0 +1,90 @@
+.title {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  text-shadow: -1px -1px 4px rgb(0, 0, 0);
+  text-transform: capitalize;
+}
+
+.res {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.res .res-con {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+.res .res-con img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.res .res-con a {
+  background-color: #EF233C;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+.res .res-con .res-cat {
+  background-color: rgba(43, 45, 66, 0.8352941176);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+.menu-grid .menu {
+  grid-column: 1/9;
+  grid-row: 1;
+}
+.menu-grid .menu .menu_item {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.menu-grid .menu .menu_item .top {
+  margin-left: 10px;
+}
+.menu-grid .menu .menu_item .top .item_title {
+  font-weight: 700;
+}
+.menu-grid .menu .menu_item .bottom {
+  margin-left: 10px;
+}
+.menu-grid .menu .menu_item .button {
+  position: absolute;
+  right: 5px;
+  font-size: 15px;
+  bottom: 5px;
+}
+.menu-grid .cart {
+  grid-column: 9/13;
+  background-color: #e9e9e9;
+  grid-row: 1;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.25);
+}/*# sourceMappingURL=order.css.map */
