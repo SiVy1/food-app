@@ -11,7 +11,6 @@ export default function Navbar() {
       return false;
     }
   } 
-  console.log(courier())
   return (
     <div className='navbar'>
         <div className='left'>
