@@ -54,7 +54,7 @@ export default function RESTAURANT() {
         price = Number(price);
         sum = sum + price;
         return (
-          <div className="cart-in">
+          <div className="cart-in" key={item.name}>
             <div className="items">
               <span>{item.name}</span>
               <span className="right">{item.price}</span>
@@ -90,7 +90,7 @@ export default function RESTAURANT() {
               <div className="menu">
                 {restaurantData?.menu.map((item: any) => {
                   return (
-                    <div className="menu_item">
+                    <div className="menu_item" key={item.name}>
                       <div className="top">
                         <span className="item_title">{item.name}</span>
                       </div>

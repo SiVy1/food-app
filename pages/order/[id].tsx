@@ -35,7 +35,7 @@ export default function Order() {
           <div className="order">
             {orderData.items?.map((item : any) =>{
               return(
-                <div>
+                <div key={item.name}>
                   {item.name} {item.price}
                 </div>
               )

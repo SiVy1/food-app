@@ -46,7 +46,7 @@ export default function Order() {
               {locationData?.res?.map((item: any) => {
                 console.log(item);
                 return (
-                  <div className="res-con">
+                  <div className="res-con" key={item.name}>
                     <Image
                       src={item?.img}
                       alt="hero img"
