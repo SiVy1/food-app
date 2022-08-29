@@ -98,7 +98,7 @@ export default function RESTAURANT() {
                         <span className="item_price">{item.price}</span>
                         <span className="item_in">{item.ingredients}</span>
                       </div>
-                      <button
+                      <button 
                         className="button"
                         onClick={() => addToCart(item.name, item.price)}
                       >

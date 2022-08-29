@@ -19,5 +19,5 @@ export default function handler(
     db.collection('locations').find({ location: location}).toArray((err: any, result: any) => {
       res.send(result)
     })
-  })
-}
+  }) 
+} 

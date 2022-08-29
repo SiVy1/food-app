@@ -41,7 +41,7 @@ export default function Order() {
               )
             })}
             </div>
-          </div>
+          </div> 
         </div>
     </div>
   );

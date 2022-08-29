@@ -20,4 +20,4 @@ export default function handler(
       res.send(result)
     })
   })
-}
+} 

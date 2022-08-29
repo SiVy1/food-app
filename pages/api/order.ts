@@ -24,7 +24,7 @@ export default function handler(
         oid: `${random}`,
         sum: sum,
         location,
-        items
+        items 
     })
   })
 }

@@ -27,7 +27,7 @@ export default function Order() {
       <div>
         <Head>
           <title>FOOD-APP ORDER SOMETHING</title>
-        </Head>
+        </Head> 
         <div className="container">
           <Navbar />
           <div className="order-con">

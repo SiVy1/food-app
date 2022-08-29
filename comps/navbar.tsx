@@ -9,7 +9,7 @@ export default function Navbar() {
       return true;
     }else{
       return false;
-    }
+    } 
   } 
   return (
     <div className='navbar'>

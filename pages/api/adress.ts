@@ -19,4 +19,4 @@ export default function handler(
     const db = client.db(dbname)
     
   })
-}
+} 
