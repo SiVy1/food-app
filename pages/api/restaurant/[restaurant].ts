@@ -12,11 +12,11 @@ export default function handler(
   res: NextApiResponse<Data>
 ) {
   mongoClient.connect(url, {}, (error: any, client: any) =>{
-    const {location} = req.query
-    console.log(location)
+    const {restaurant} = req.query
+    console.log(restaurant)
     if(error) console.log(error)
     const db = client.db(dbname)
-    db.collection('locations').find({ location: location}).toArray((err: any, result: any) => {
+    db.collection('restaurant').find({ slug: restaurant}).toArray((err: any, result: any) => {
       res.send(result)
     })
   })

@@ -12,12 +12,19 @@ export default function handler(
   res: NextApiResponse<Data>
 ) {
   mongoClient.connect(url, {}, (error: any, client: any) =>{
-    const {location} = req.query
+    let random = req.body.random
+    let items = req.body.cartArray
+    let sum = req.body.sum
+    let location = req.body.data
     console.log(location)
+    console.log(random, items)
     if(error) console.log(error)
     const db = client.db(dbname)
-    db.collection('locations').find({ location: location}).toArray((err: any, result: any) => {
-      res.send(result)
+    db.collection('orders').insertOne({
+        oid: `${random}`,
+        sum: sum,
+        location,
+        items
     })
   })
 }
